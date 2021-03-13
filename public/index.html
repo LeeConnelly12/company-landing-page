@@ -7,11 +7,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
     <script src="./js/app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/app.css">
 </head>
 
-<body>
+<body class="bg-blue-50 leading-none font-body">
 
+    <div class="corner absolute top-0 right-0 bg-gradient-to-r from-purple-700 to-pink-300 w-52 h-40"></div>
+
+    <nav class="p-4 fixed top-0 right-0 left-0 z-10">
+        <div class="flex justify-between items-center">
+            <div class="font-bold">company</div>
+            <button class="inline-flex items-center justify-center w-12 h-8 bg-purple-500 rounded-xl" type="button">
+                <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
+                    <rect y="4" width="16" height="2" fill="white"/>
+                    <rect y="8" width="16" height="2" fill="white"/>
+                    <rect width="16" height="2" fill="white"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <section class="pt-32 relative">
+        <div class="container px-4">
+            <h1 class="text-2xl w-4/5">Lorem ipsum dolor sit amet.</h1>
+            <a class="text-white font-bold h-11 px-10 bg-gradient-to-r from-green-400 to-green-100 rounded-xl shadow-md inline-flex items-center mt-7" href="#!">Get Started for Free</a>
+        </div>
+    </section>
+
+    <section class="discover bg-gray-500 py-24 mt-10 text-white">
+        <div class="container px-4">
+            <h2 class="text-center text-xl">Lorem ipsum dolor sit amet consectetur.</h2>
+            <div class="text-base">
+                <div class="pt-5">
+                    <p class="w-4/5 font-medium">Lorem Ipsum Dolor sit Amet this is a Sample</p>
+                    <p class="pt-4 opacity-50">Decentralized Reputation Ledger allows you to find and compare experts bnased on how accurate they’ve been in the past.</p>
+                </div>
+                <div class="pt-5">
+                    <p class="w-4/5 font-medium">Lorem Ipsum Dolor sit Amet this is a Sample</p>
+                    <p class="pt-4 opacity-50">Decentralized Reputation Ledger allows you to find and compare experts bnased on how accurate they’ve been in the past.</p>
+                </div>
+            </div>
+            <a class="text-white font-bold h-11 px-9 bg-gradient-to-r from-green-400 to-green-100 rounded-xl shadow-md flex items-center justify-center mt-5" href="#!">Discover Experts</a>
+        </div>
+    </section>
+
+    <section class="pt-3">
+        <div class="container px-4">
+            <h2 class="text-center text-xl">Lorem ipsum dolor sit</h2>
+            <div class="text-base text-gray-400">
+                <div class="pt-5">
+                    <p class="w-4/5 font-medium">Lorem Ipsum Dolor sit Amet this is a Sample</p>
+                    <p class="pt-4">Decentralized Reputation Ledger allows you to find and compare experts bnased on how accurate they’ve been in the past.</p>
+                </div>
+                <div class="pt-5">
+                    <p class="w-4/5 font-medium">Lorem Ipsum Dolor sit Amet this is a Sample</p>
+                    <p class="pt-4">Decentralized Reputation Ledger allows you to find and compare experts bnased on how accurate they’ve been in the past.</p>
+                </div>
+            </div>
+            <a class="text-white font-bold h-11 px-9 bg-gradient-to-r from-green-400 to-green-100 rounded-xl shadow-md flex items-center justify-center mt-5" href="#!">Start Predicting</a>
+        </div>
+    </section>
+
+    <section class="text-white text-center bg-gradient-to-r from-purple-700 to-pink-300 py-8 sm:py-10 mt-10">
+        <div class="container px-4">
+            <h2 class="text-center text-xl">Lorem ipsum</h2>
+            <ul class="grid sm:grid-cols-2 lg:grid-cols-4 md:gap-x-2">
+                <li class="pt-14">
+                        <div class="bg-white w-30 h-30 rounded-full flex items-center justify-center mx-auto">
+                        <svg width="40" height="40" fill="none">
+                            <circle cx="20" cy="20" r="20" class="text-gray-300 fill-current"/>
+                            <path d="M19.5 10.5h4.646a.97.97 0 00.627-.226c1.039-.879 1.617-1.609 2.16-2.616.31-.575 1.063-.758 1.561-.336 9.448 7.998 8.505 12.957 4.676 22.1a.923.923 0 01-1.62.154.923.923 0 00-.115-.14l-.642-.643a1 1 0 00-.707-.293H27.5a1 1 0 01-1-1v-6a1 1 0 00-1-1h-11a1 1 0 01-1-1v-2a1 1 0 011-1h3a1 1 0 001-1v-4a1 1 0 011-1zM12.755 25.563c.854 1.058 1.557 2.238 2.136 3.468 2.689 5.706 4.897 4.464 3.788 6.096-.342.503-.79.989-1.395 1.032-1.947.14-5.986-1.806-8.628-4.718-3.131-3.453-4.28-12.125-3.036-13.254 1.074-.974 4.267 3.824 7.135 7.375z" class="text-white fill-current"/>
+                        </svg>
+                    </div>
+                    <h2 class="font-bold text-lg pt-14">Public</h2>
+                    <p class="text-base opacity-90">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maxime perspiciatis repellat esse ex veritatis.</p>
+                </li>
+                <li class="pt-14">
+                    <div class="bg-white w-30 h-30 rounded-full flex items-center justify-center mx-auto">
+                        <svg width="38" height="45" fill="none">
+                            <path d="M18.597.68L1.124 8.236a1.02 1.02 0 00-.444.369.98.98 0 00-.166.545v17.11c0 .157.039.314.113.455 4.078 7.754 7.638 13.95 16.13 17.697.132.058.275.088.42.088h4.581c.22 0 .437-.07.614-.199 7.62-5.529 11.105-9.36 15.046-17.6a.99.99 0 00.096-.421V9.15a.98.98 0 00-.166-.545 1.021 1.021 0 00-.445-.369L19.431.681a1.052 1.052 0 00-.834 0V.68z" class="text-gray-300 fill-current"/>
+                            <path d="M4.111 22V11.995c0-.312.15-.607.408-.793 4.505-3.252 8.41-4.653 13.752-5.913a1.047 1.047 0 01.87.187.971.971 0 01.387.78v15.33c0 .146-.033.29-.097.423a.523.523 0 01.097-.009h13.36c.273 0 .535.105.728.293a.986.986 0 01.3.707v2.326c0 .115-.02.231-.061.339-2.894 7.766-7.04 11.69-13.891 15.127-.673.337-1.464-.146-1.464-.883V23.415c0-.147.033-.293.098-.426a.545.545 0 01-.111.012H5.139c-.273 0-.534-.105-.727-.293a.986.986 0 01-.3-.707V22z" class="text-white fill-current"/>
+                        </svg>
+                    </div>
+                    <h2 class="font-bold text-lg pt-14">Trustless</h2>
+                    <p class="text-base opacity-90">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maxime perspiciatis repellat esse ex veritatis.</p>
+                </li>
+                <li class="pt-14">
+                    <div class="bg-white w-30 h-30 rounded-full flex items-center justify-center mx-auto">
+                        <svg width="32" height="43" fill="none">
+                            <circle cx="16" cy="28" r="4" class="text-gray-300 fill-current"/>
+                            <path d="M23.5 15.957V7.044c-5.486-6.719-8.836-6.732-15 0v8.913H2V40.6h28V15.957h-6.5zm0 0L8.5 16" class="stroke-4 text-gray-300 stroke-current"/>
+                        </svg>
+                    </div>
+                    <h2 class="font-bold text-lg pt-14">Permanent</h2>
+                    <p class="text-base opacity-90">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maxime perspiciatis repellat esse ex veritatis.</p>
+                </li>
+                <li class="pt-14">
+                    <div class="bg-white w-30 h-30 rounded-full flex items-center justify-center mx-auto">
+                        <svg width="40" height="41" fill="none">
+                            <path d="M20 21V2.5" class="stroke-4 text-gray-300 stroke-current"/>
+                            <circle cx="20" cy="21" r="4" class="text-gray-300 fill-current"/>
+                            <circle cx="20" cy="21" r="18" class="stroke-4 text-gray-300 stroke-current"/>
+                            <circle cx="20" cy="21" r="10" class="stroke-4 text-gray-300 stroke-current"/>
+                            <path d="M22 16.027V1.49a1 1 0 011.379-.926l8.416 3.443a1 1 0 01.418 1.53l-8.416 11.095c-.58.763-1.797.353-1.797-.605z" class="text-white fill-current"/>
+                        </svg>
+                    </div>
+                    <h2 class="font-bold text-lg pt-14">Decentralized</h2>
+                    <p class="text-base opacity-90">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maxime perspiciatis repellat esse ex veritatis.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="py-8">
+        <div class="container px-4">
+            <h2 class="text-center text-xl">Lorem ipsum dolor sit</h2>
+            <div class="text-base text-gray-400">
+                <div class="pt-5">
+                    <p class="w-4/5 font-medium">Lorem Ipsum Dolor sit Amet this is a Sample</p>
+                    <p class="pt-4">Decentralized Reputation Ledger allows you to find and compare experts bnased on how accurate they’ve been in the past.</p>
+                </div>
+                <div class="pt-5">
+                    <p class="w-4/5 font-medium">Lorem Ipsum Dolor sit Amet this is a Sample</p>
+                    <p class="pt-4">Decentralized Reputation Ledger allows you to find and compare experts bnased on how accurate they’ve been in the past.</p>
+                </div>
+            </div>
+            <a class="text-white font-bold h-11 px-9 bg-gradient-to-r from-green-400 to-green-100 rounded-xl shadow-md flex items-center justify-center mt-5" href="#!">View Our Demo</a>
+        </div>
+    </section>
+    
 </body>
 
 </html>
