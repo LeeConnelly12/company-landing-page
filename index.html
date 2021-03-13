@@ -6,17 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
-    <script src="./js/app.js" defer></script>
+    <script src="./dist/js/app.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./dist/css/app.css">
 </head>
 
 <body class="antialiased bg-blue-50 font-body" x-data="{ atTop: window.pageYOffset < 64 }" @scroll.window="atTop = window.pageYOffset < 64">
 
-    <div class="absolute top-0 right-0 hidden bg-gray-500 xl:block middle-corner"></div>
+    <svg class="absolute right-0 hidden w-11/12 gray-svg xl:block" width="1418" height="1600" fill="none" viewBox="0 0 1418 1472" preserveAspectRatio="none">
+        <path d="M1417.5 243L1002.86 0 32.683 554.85c-42.09 24.072-42.35 84.677-.466 109.107L1417.5 1472V243z" fill="#4B5770"/>
+    </svg>
 
-    <div class="absolute top-0 right-0 h-40 top-corner bg-gradient-to-r from-purple-700 to-pink-300 w-52"></div>
+    <svg class="absolute top-0 right-0 h-40 corner-svg w-52" viewBox="0 0 1098 642" fill="none" preserveAspectRatio="none">
+        <path d="M1098 0H0l1098 642V0z" fill="url(#paint0_linear)"/>
+        <defs>
+            <linearGradient id="paint0_linear" x1="1" y1="292" x2="1099" y2="292" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5C40E0"/>
+                <stop offset="1" stop-color="#E788AC"/>
+            </linearGradient>
+        </defs>
+    </svg>
 
     <nav class="fixed top-0 left-0 right-0 z-10 p-4 text-white transition duration-300 xl:px-9 xl:py-9" :class="{ 'bg-white' : !atTop, 'text-white': atTop, 'text-black': !atTop, 'shadow-md': !atTop }">
         <div class="flex items-center justify-between">
@@ -77,15 +87,15 @@
 
     <section class="py-24 mt-10 text-white bg-gray-500 md:py-28 discover xl:bg-transparent xl:pt-72 xl:mt-0">
         <div class="container px-4 mx-auto">
-            <div class="xl:w-5/12 xl:ml-auto">
+            <div class="xl:w-6/12 xl:ml-auto">
                 <h2 class="text-xl text-center sm:text-left md:text-4xl">Lorem ipsum dolor sit amet consectetur.</h2>
                 <div class="grid text-base sm:grid-cols-2 gap-x-9 sm:pt-8 md:pt-12">
                     <div class="pt-5 sm:pt-0">
-                        <p class="w-4/5 md:text-2xl">Lorem Ipsum Dolor sit Amet this is a Sample</p>
+                        <p class="w-4/5 md:text-xl">Lorem Ipsum Dolor sit Amet this is a Sample</p>
                         <p class="pt-4 opacity-50 md:pt-7">Decentralized Reputation Ledger allows you to find and compare experts bnased on how accurate they’ve been in the past.</p>
                     </div>
                     <div class="pt-5 sm:pt-0">
-                        <p class="w-4/5 md:text-2xl">Lorem Ipsum Dolor sit Amet this is a Sample</p>
+                        <p class="w-4/5 md:text-xl">Lorem Ipsum Dolor sit Amet this is a Sample</p>
                         <p class="pt-4 opacity-50 md:pt-7">Decentralized Reputation Ledger allows you to find and compare experts bnased on how accurate they’ve been in the past.</p>
                     </div>
                 </div>
@@ -96,16 +106,16 @@
 
     <section class="pt-4 pb-8 sm:pb-10 md:pb-14 xl:pb-20 xl:pt-72">
         <div class="container px-4 mx-auto">
-            <div class="xl:w-5/12">
+            <div class="xl:w-6/12">
                 <h2 class="text-xl text-center sm:text-left md:text-4xl">Lorem ipsum dolor sit</h2>
                 <div class="grid text-base text-gray-400 sm:grid-cols-2 gap-x-9 sm:pt-8 md:pt-12">
                     <div class="pt-5 sm:pt-0">
-                        <p class="w-4/5 font-medium md:text-2xl">Give your Audience a reason to trust you</p>
+                        <p class="w-4/5 font-medium md:text-xl">Give your Audience a reason to trust you</p>
                         <p class="pt-4 md:pt-7">Decentralized Reputation Ledger allows you to find and compare experts bnased on how accurate they’ve been in the past.</p>
                         <p class="hidden pt-4 sm:block">Decentralized Reputation Ledger allows you to find and compare experts bnased on how accurate they’ve been in the past.</p>
                     </div>
                     <div class="pt-5 sm:pt-0">
-                        <p class="w-4/5 font-medium md:text-2xl">Give your Audience a reason to trust you</p>
+                        <p class="w-4/5 font-medium md:text-xl">Give your Audience a reason to trust you</p>
                         <p class="pt-4 md:pt-7">Decentralized Reputation Ledger allows you to find and compare experts bnased on how accurate they’ve been in the past.</p>
                         <p class="hidden pt-4 sm:block">Decentralized Reputation Ledger allows you to find and compare experts bnased on how accurate they’ve been in the past.</p>
                     </div>

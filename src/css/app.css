@@ -6,20 +6,24 @@
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
 }
 
-.top-corner {
-    clip-path: polygon(0 0, 100% 0, 100% 100%);
-}
-
-.middle-corner {
-    width: 1800px;
-    height: 1600px;
-    top: 490px;
-    clip-path: polygon(0 43%, 0 25%, 65% 0, 100% 25%, 100% 100%);
+.gray-svg {
+    top: 337px;
 }
 
 @screen xl {
-    .top-corner {
-        width: 1400px;
-        height: 900px;
+    .corner-svg {
+        width: 1098px;
+        height: 642px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .corner-svg {
+        width: 1300px;
+        height: 800px;
+    }
+
+    .gray-svg {
+        top: 450px;
     }
 }
