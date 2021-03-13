@@ -14,11 +14,13 @@
 
 <body class="antialiased bg-blue-50 font-body" x-data="{ atTop: window.pageYOffset < 64 }" @scroll.window="atTop = window.pageYOffset < 64">
 
-    <div class="absolute top-0 right-0 h-40 corner-svg corner bg-gradient-to-r from-purple-700 to-pink-300 w-52"></div>
+    <div class="absolute top-0 right-0 hidden bg-gray-500 xl:block middle-corner"></div>
+
+    <div class="absolute top-0 right-0 h-40 top-corner bg-gradient-to-r from-purple-700 to-pink-300 w-52"></div>
 
     <nav class="fixed top-0 left-0 right-0 z-10 p-4 text-white transition-colors duration-300 xl:px-9 xl:py-9" :class="{ 'bg-white' : !atTop, 'text-white': atTop, 'text-black': !atTop }">
         <div class="flex items-center justify-between">
-            <div class="font-bold">company</div>
+            <div class="font-bold text-black">company</div>
             <button class="inline-flex items-center justify-center w-12 h-8 bg-purple-500 rounded-xl xl:hidden" type="button">
                 <svg width="16" height="10" fill="none">
                     <rect class="text-white fill-current" y="4" width="16" height="2"/>
@@ -63,9 +65,9 @@
         </div>
     </nav>
 
-    <section class="relative pb-10 pt-30 md:pt-36 md:pb-12 xl:pt-72"> 
+    <section class="relative pt-30 lg:pt-36 xl:pt-80"> 
         <div class="container px-4 mx-auto">
-            <div class="lg:w-3/4 xl:w-5/12">
+            <div class="md:w-3/4 lg:w-8/12 xl:w-5/12">
                 <h1 class="text-2xl md:text-5xl">Dishonesty shouldn't be profitable.</h1>
                 <p class="hidden w-3/4 pt-5 text-gray-400 md:pt-10 sm:block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus quos, vitae dolor cumque eligendi ipsa.</p>
             </div>
@@ -73,20 +75,22 @@
         </div>
     </section>
 
-    <section class="py-24 text-white bg-gray-500 md:py-28 discover">
+    <section class="py-24 mt-10 text-white bg-gray-500 md:py-28 discover xl:bg-transparent xl:pt-72 xl:mt-0">
         <div class="container px-4 mx-auto">
-            <h2 class="text-xl text-center md:text-left md:text-4xl">Lorem ipsum dolor sit amet consectetur.</h2>
-            <div class="grid text-base md:grid-cols-2 gap-x-9 md:pt-12">
-                <div class="pt-5 md:pt-0">
-                    <p class="w-4/5 md:text-2xl">Lorem Ipsum Dolor sit Amet this is a Sample</p>
-                    <p class="pt-4 opacity-50 md:pt-7">Decentralized Reputation Ledger allows you to find and compare experts bnased on how accurate they’ve been in the past.</p>
+            <div class="xl:w-5/12 xl:ml-auto">
+                <h2 class="text-xl text-center md:text-left md:text-4xl">Lorem ipsum dolor sit amet consectetur.</h2>
+                <div class="grid text-base md:grid-cols-2 gap-x-9 md:pt-12">
+                    <div class="pt-5 md:pt-0">
+                        <p class="w-4/5 md:text-2xl">Lorem Ipsum Dolor sit Amet this is a Sample</p>
+                        <p class="pt-4 opacity-50 md:pt-7">Decentralized Reputation Ledger allows you to find and compare experts bnased on how accurate they’ve been in the past.</p>
+                    </div>
+                    <div class="pt-5 md:pt-0">
+                        <p class="w-4/5 md:text-2xl">Lorem Ipsum Dolor sit Amet this is a Sample</p>
+                        <p class="pt-4 opacity-50 md:pt-7">Decentralized Reputation Ledger allows you to find and compare experts bnased on how accurate they’ve been in the past.</p>
+                    </div>
                 </div>
-                <div class="pt-5 md:pt-0">
-                    <p class="w-4/5 md:text-2xl">Lorem Ipsum Dolor sit Amet this is a Sample</p>
-                    <p class="pt-4 opacity-50 md:pt-7">Decentralized Reputation Ledger allows you to find and compare experts bnased on how accurate they’ve been in the past.</p>
-                </div>
+                <a class="flex items-center justify-center mt-5 font-bold text-white shadow-md md:mt-12 h-11 px-9 bg-gradient-to-r from-green-400 to-green-100 rounded-xl md:inline-flex" href="#!">Discover Experts</a>
             </div>
-            <a class="flex items-center justify-center mt-5 font-bold text-white shadow-md md:mt-12 h-11 px-9 bg-gradient-to-r from-green-400 to-green-100 rounded-xl md:inline-flex" href="#!">Discover Experts</a>
         </div>
     </section>
 
