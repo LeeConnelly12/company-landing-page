@@ -15,6 +15,10 @@
         width: 1098px;
         height: 642px;
     }
+
+    .why {
+        height: 1000px;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -25,5 +29,13 @@
 
     .gray-svg {
         top: 450px;
+    }
+
+    .why {
+        height: 1081px;
+    }
+
+    .icons {
+        @apply px-0 gap-x-11;
     }
 }
