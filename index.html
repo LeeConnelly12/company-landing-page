@@ -14,7 +14,7 @@
 
 <body class="antialiased bg-blue-50 font-body" x-data="{ atTop: window.pageYOffset < 64 }" @scroll.window="atTop = window.pageYOffset < 64">
 
-    <svg class="absolute right-0 hidden w-11/12 gray-svg xl:block" width="1418" height="1600" fill="none" viewBox="0 0 1418 1472" preserveAspectRatio="none">
+    <svg class="absolute right-0 hidden w-11/12 gray-svg xl:block 3xl:w-4/5" width="1418" height="1600" fill="none" viewBox="0 0 1418 1472" preserveAspectRatio="none">
         <path d="M1417.5 243L1002.86 0 32.683 554.85c-42.09 24.072-42.35 84.677-.466 109.107L1417.5 1472V243z" fill="#4B5770"/>
     </svg>
 
@@ -28,7 +28,7 @@
         </defs>
     </svg>
 
-    <nav class="fixed top-0 left-0 right-0 z-10 p-4 text-white transition duration-300 xl:px-9 xl:py-9" :class="{ 'bg-white' : !atTop, 'text-white': atTop, 'text-black': !atTop, 'shadow-md': !atTop }">
+    <nav class="fixed top-0 left-0 right-0 z-10 p-4 text-white transition duration-300 xl:p-9" :class="{ 'bg-white' : !atTop, 'text-white': atTop, 'text-black': !atTop, 'shadow-md': !atTop }">
         <div class="flex items-center justify-between">
             <div class="font-bold text-black">company</div>
             <button class="inline-flex items-center justify-center w-12 h-8 bg-purple-500 rounded-xl xl:hidden" type="button">
@@ -125,7 +125,7 @@
         </div>
     </section>
 
-    <section class="relative mt-12 text-center text-white why xl:flex xl:items-center">
+    <section class="relative mt-12 text-center text-white why xl:grid xl:place-items-center">
         <svg class="absolute top-0 bottom-0 w-full h-full sm:hidden" viewBox="0 0 453 1485" preserveAspectRatio="none">
             <path d="M453 1405V80L289.831 13.151a167.998 167.998 0 00-127.621.1L0 80v1325l162.689 66.8a167.974 167.974 0 00127.622 0L453 1405z" fill="url(#mobile_why)"/>
             <defs>
@@ -144,7 +144,7 @@
                 </linearGradient>
             </defs>
         </svg>
-        <svg class="absolute top-0 bottom-0 hidden w-full h-full xl:block" viewBox="0 0 2560 1925" preserveAspectRatio="none">
+        <svg class="top-0 bottom-0 hidden xl:block" viewBox="0 0 2560 1925">
             <path d="M1256.28 7.05L0 721v454l1255.52 742.92a49.986 49.986 0 0050.95-.02L2560 1175V721L1305.71 7.067a49.984 49.984 0 00-49.43-.016z" fill="url(#desktop_why)"/>
             <defs>
                 <linearGradient id="desktop_why" x1="0" y1="1501" x2="1439" y2="-425" gradientUnits="userSpaceOnUse">
@@ -153,11 +153,9 @@
                 </linearGradient>
             </defs>
         </svg>
-
-
-        <div class="container relative px-4 pt-12 pb-16 mx-auto sm:pt-16 sm:pb-32">
+        <div class="container relative px-4 pt-12 pb-16 mx-auto transform -translate-y-1/2 top-2/4 xl:absolute sm:pt-16 sm:pb-32 xl:py-0">
             <h2 class="text-xl text-center md:text-4xl">Lorem ipsum</h2>
-            <ul class="grid pt-12 icons sm:grid-cols-2 lg:grid-cols-4 sm:gap-x-14 gap-y-14 xl:px-12 xl:gap-x-4">
+            <ul class="grid pt-12 icons sm:grid-cols-2 lg:grid-cols-4 sm:gap-x-14 gap-y-14 xl:px-24 xl:gap-x-3 2xl:px-0 2xl:gap-x-9">
                 <li class="xl:max-w-xs">
                         <div class="flex items-center justify-center mx-auto bg-white rounded-full w-30 h-30">
                         <svg width="40" height="40" fill="none">
