@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.discover {
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+@media (max-width: 1280px) {
+    .discover {
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+    }
 }
 
 .gray-svg {
@@ -19,16 +21,21 @@
     .why {
         height: 1000px;
     }
+
+    .discover {
+        clip-path: none;
+    }
 }
 
 @media (min-width: 1600px) {
     .corner-svg {
-        width: 1300px;
-        height: 800px;
+        width: 70%;
+        height: 60%;
     }
 
     .gray-svg {
-        top: 450px;
+        top: 29%;
+        height: 1800px;
     }
 
     .why {
@@ -37,5 +44,11 @@
 
     .icons {
         @apply px-0 gap-x-11;
+    }
+}
+
+@media (min-width: 1920px) {
+    .gray-svg {
+        width: 80%;
     }
 }
